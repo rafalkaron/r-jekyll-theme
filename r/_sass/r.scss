@@ -1,0 +1,36 @@
+// Variables
+@import "variables";
+
+// Layout
+@media only screen and (min-width: 950px) {
+    @import "r/layout/desktop";
+}
+@media only screen and (max-width: 950px) {
+    @import "r/layout/mobile";
+}
+@media only print {
+    @import "r/layout/print";
+}
+@import "r/layout/columns";
+
+// Styling
+@import "r/styling/animations",
+"r/styling/shadow",
+"r/styling/formatting",
+"r/styling/button",
+"r/styling/selection";
+
+// Content
+main#page-content {
+    @import "r/content/paragraph",
+    "r/content/code",
+    "r/content/table",
+    "r/content/image",
+    "r/content/code",
+    "r/content/quote",
+    "r/content/list",
+    "r/content/note",
+    "r/content/abbr",
+    "r/content/link",
+    "r/content/title";
+}

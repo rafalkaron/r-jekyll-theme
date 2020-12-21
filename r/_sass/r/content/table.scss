@@ -1,0 +1,76 @@
+/* Tables */
+table {
+  width: 100%;
+  margin: $margin 0;
+  table-layout: auto;
+  border-collapse: collapse;
+  border: none;
+  border-top: 0.25rem solid $primary-color;
+  border-bottom: 0.25rem solid $primary-color;
+}
+
+/* Tables without headers */
+table:has(thead) {
+  border-top: none;
+}
+
+
+/* Table entries padding */
+td,
+tr,
+th {
+  padding: 0.5em;
+}
+th,
+th * {
+  font-weight: bold;
+  color: $text-light;
+  background-color: $primary-color;
+}
+
+/* Uneven table rows. */
+tr:nth-child(odd) > td {
+  background-color: $background-light;
+}
+
+/* Even table rows. */
+tr:nth-child(even) > td {
+  background-color: $background-middle;
+}
+
+/*** Special table - START */
+table.cv-experience {
+    border: none;
+    width: 100%;
+    margin-top: $margin;
+    display: block;
+
+    thead {
+      display: none;
+    }
+
+    tr > td {
+      background-color: transparent;
+      vertical-align: top;
+    }
+    
+    tr > td:nth-child(1) {
+      padding: 0.75rem 2.5rem 0.75rem 0;
+    }
+
+    tr > td:nth-child(2) {
+      border-left: $border-thin;
+      padding: 0.75rem 0 0.75rem 2.5rem;
+    }
+
+    td {
+      color: $primary-color;
+      font-size: 1.4rem;
+
+      strong {
+        color: $text-dark;
+        font-size: 1.6rem;
+      }
+    }
+}
+/*** Special table - END */

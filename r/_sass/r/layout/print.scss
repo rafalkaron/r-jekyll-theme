@@ -1,0 +1,206 @@
+/*** General - START */
+html {
+    font-size: 75%;
+}
+* {
+    font-family: $main-font;
+    line-height: 1.6em;
+    text-align: left;
+    color: $text-dark;
+}
+
+div#site-logo-container,
+div#site-nav-page,
+footer#site-footer,
+.screen {
+    display: none;
+}
+
+@page {
+    margin: 3.5rem 5rem;
+}
+/*** General - END */
+
+/*** Front Cover - START */
+div#cover-front {
+    break-after: always;
+    break-inside: avoid;
+    display: block;
+    page-break-after: always;
+}
+div#cover-front-content {
+    position: absolute;
+    top: 25vh;
+    width: 100%;
+    margin: 0 auto;
+}
+a#site-logo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18rem;
+    font-weight: normal;
+    color: $primary-color;
+    text-decoration: none;
+    line-height: 0.8em;
+    font-family: $logo-font;
+    margin-left: -0.1em;
+}
+div#site-reference-container {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+a#site-reference {
+    color: $secondary-color;
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+/*** Cover - END */
+
+/*** TOC - START */
+header#site-header {
+    display: block;
+}
+div#site-nav-section {
+    page-break-after: always;
+}
+div#toc-sections ul {
+    margin: 0;
+}
+div#toc-sections li {
+    color: $text-dark;
+    margin: 0.8rem 0;
+    font-size: 1.8rem;
+}
+#toc-sections a.nav-link {
+    text-decoration: none;
+    color: $secondary-color;
+    font-weight: bold;
+}
+/*** TOC - END */
+
+/*** Avoid breaking elements - START */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+p,
+ul,
+ol,
+section {
+    break-inside: avoid;
+}
+/*** Avoid breaking elements - END */
+
+/*** Titles - START */
+h1 {
+    font-size: 2.8rem;
+    page-break-before: always;
+}
+h2 {
+    font-size: 2.2rem;
+}
+h3 {
+    font-size: 2.0rem;
+}
+h4,
+h5,
+h6 {
+    font-size: 1.8rem;
+}
+h1.print-header {
+    margin: 0;
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: $primary-color;
+}
+/*** Titles - END */
+
+/*** Links - START */
+main#page-content {
+    a {
+        border-bottom: none !important;
+        color: $text-dark;
+    }
+    a.expand {
+        color: $secondary-color;
+    }
+    a.expand::after {
+        content: " (" attr(href) ") ";
+        font-weight: normal;
+    }
+
+    li,
+    p {
+        abbr,
+        abbr[title] {
+            border-bottom: none !important;
+            color: $text-dark;
+        }
+    }
+}
+/*** Links - END */
+
+/*** Back Cover - START */
+div.print#cover-back {
+    page-break-before: always;
+    break-inside: avoid;
+    display: block;
+    font-size: 1.6rem;
+
+    div#cover-back-content {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        page-break-inside: avoid;
+
+        div.footer-contact {
+            display: block;       
+
+            ul {
+                margin: 0;
+                list-style: none;
+                padding: 0;
+            }
+            li {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0.8rem 0;
+            }
+            a {
+                text-decoration: none;
+                display: inline-block;
+                color: $secondary-color;
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+            img.footer-icon {
+                height: 2.8rem;
+                width: 2.8rem;
+                margin: 0 $margin 0 $margin-small;
+            }
+        }
+        div.footer-copyright {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: block;  
+            color: $primary-color;
+            font-weight: bold;
+            width: 100%;
+            text-align: right;
+            a {
+                text-decoration: none;
+                color: inherit;
+                font-weight: inherit;
+            }
+        }
+    }
+}
+/*** Back Cover - END */

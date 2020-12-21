@@ -1,0 +1,24 @@
+
+
+<header id="site-header" role="banner">    
+    <div id="site-logo-container">
+        {%- if site.data.meta.logo %}
+        <a href="/" id="site-logo">{{ site.data.meta.logo }}</a>
+        {%- endif %}
+    </div>
+
+    <nav id="site-nav">
+        <div id="site-nav-page">
+            <div id="toc-pages">
+                {% include toc/pages.html -%}
+            </div>
+        </div>
+        <div id="site-nav-section">
+            <h1 class="print print-header">Contents</h1>
+            <div id="toc-sections">
+                {% include toc/sections.html html=content anchor_class="nav-link" h_min=1 h_max=1 sanitize=true %}
+            </div>
+        </div>
+    </nav>
+</header>
+

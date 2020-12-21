@@ -1,0 +1,245 @@
+/*** General - START */
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    margin: 0;
+}
+* {
+    font-family: $main-font;
+    line-height: 1.6em;
+    text-align: left;
+    color: $text-dark;
+    font-size: 1.6rem;
+}
+.print {
+    display: none;
+}
+/*** General - END */
+
+/*** Body - START */
+body {
+    margin: 0;
+    min-width: 375px;
+    display:flex; 
+    flex-direction:column; 
+    height:100vh;
+    background-color: $background-light;
+}
+
+main#page-content {
+    margin: 0;
+}
+
+article {
+    color: $text-dark;
+    padding: 5rem 5rem; 
+}
+
+article + article {
+    border-top: 0.5rem dotted $background-middle;
+}
+/*** Body - END */
+
+/*** Header - START */
+header#site-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem 5rem $margin 5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: $primary-color;
+}
+
+/* Logo */
+div#site-logo-container {
+    display: flexbox;
+    justify-items: flex-start;
+    overflow: hidden;
+    margin: 0 5rem 0 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-height: 10rem;
+}
+a#site-logo {
+    font-size: 10rem;
+    font-weight: normal;
+    color: $text-light;
+    text-decoration: none;
+    line-height: 0.9em;
+    overflow: hidden;
+    display: block;
+    font-family: $logo-font;
+}
+
+/* Navigation */
+nav#site-nav {
+    display: flexbox;
+    justify-content: flex-end;
+    margin: 0;
+}
+div#site-nav-page {
+    margin: 0 0 1rem 0;
+}
+div#site-nav-section {
+    margin: 0;
+}
+
+/* Navigation links */
+div#toc-pages ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+div#toc-sections ul {
+    margin: 0;
+    padding: 0;
+    display: flex;        
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+div#toc-pages li {
+    padding-left: 1em;
+    list-style: none;
+}
+div#toc-pages li:first-of-type {
+    padding-left: 0;
+}
+div#toc-sections li {
+    padding-left: 1em;
+    list-style: none;
+}
+div#toc-sections li:first-of-type {
+    padding-left: 0;
+}
+
+#toc-pages a.nav-link {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+#toc-sections a.nav-link {
+    font-size: 1.6rem;
+}
+a.nav-link {
+    color: $text-light;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+a.nav-link:hover,
+a.nav-link:active,
+a.nav-link:focus {
+    text-decoration: underline;
+}
+/*** Header - END */
+
+/*** Footer - START */
+footer#site-footer {
+    margin-top:auto; 
+    position: relative;
+    bottom: 0;
+    background-color: $primary-color;
+    color: $text-light;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 5rem;
+}
+div.footer-column {
+    color: $text-light;
+    font-weight: normal;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 0.5rem 0;
+}
+
+div.footer-column.footer-contact {
+    padding-left: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a.footer-link {
+    color: $text-light;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+a.footer-link:hover,
+a.footer-link:active {
+    text-decoration: underline;
+}
+
+a.footer-image-link {
+    display: flex;
+}
+
+img.footer-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    padding-left: 0.8rem;
+}
+/*** Footer - END */
+
+/*** Tall screens - START */
+@media only screen and (max-width: 680px) {
+    header#site-header {
+        display: flexbox;
+        flex-direction: column;
+    }
+    div#site-logo-container {
+        margin: 0;
+        width: 100%;
+        min-height: 2.8rem;
+        display: flex;
+        justify-content: center;
+    }
+    a#site-logo {
+        font-size: 6.2rem;
+        line-height: 0.9em;
+        overflow: hidden;
+        margin-left: -0.25em;
+    }
+    nav#site-nav {
+        width: 100%;
+
+    }
+    div#toc-pages ul {
+        display: flex;
+        justify-content: center;
+    }
+    div#toc-sections ul {
+        display: flex;        
+        justify-content: center;
+    }
+    #toc-pages a.nav-link {
+        font-weight: bold;
+        font-size: 2.2rem;
+    }
+    #toc-sections a.nav-link {
+        font-size: 1.6rem;
+    }
+
+}
+
+/* iPhone 10-ish */
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    header#site-header,
+    article,
+    footer#site-footer {
+        padding: 2.5rem 2.5rem;
+    }
+    header#site-header {
+        padding: 2.5rem 2.5rem $margin 5rem;
+    }
+}
+/*** Tall screens - END */

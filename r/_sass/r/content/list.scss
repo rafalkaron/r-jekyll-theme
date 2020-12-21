@@ -1,0 +1,64 @@
+/*** Ordered and unordered lists - START */
+ol,
+ul {
+    margin: 0;
+}
+li {
+    margin: 0.8rem 0;
+    font-size: 1.6rem;
+}
+/*** Ordered and unordered lists - END */
+
+/*** Special item lists - START */
+ul.items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.8rem 0 0 0;
+    padding: 0;
+}
+ul.items > li {
+    font-size: 1.3rem;
+    list-style: none;
+    padding: 0.25em 0.75em;
+    margin: 0.8rem 1.6rem 0.8rem 0;
+    background-color: $background-middle;
+    color: $text-dark;
+    border-radius: $border-radius;
+    width: auto;
+    text-align: center;
+    vertical-align: middle;
+    display: inline;
+    text-decoration: none;
+}
+ul.items * {
+    border: none;
+    text-decoration: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+/*** Special item lists - END */
+
+/*** Definition lists - START */
+dl {
+    display: block;
+    margin: $margin 0;
+}
+dd + dt {
+    margin-top: $margin;
+}
+
+dt,
+dd {
+    border-left: $border;
+    padding: 0 0 0 1.4rem;
+    font-size: 1.4rem;
+}
+
+dt,
+dt * {
+    font-weight: bold;
+}
+dd {
+    margin: 0 0 0 0;
+}
+/*** Definition lists - END */

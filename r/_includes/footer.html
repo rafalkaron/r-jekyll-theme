@@ -1,0 +1,17 @@
+
+
+<footer id="site-footer">
+    <div class="footer-column footer-contact">
+        {%- if site.data.contact %}
+            {%- assign con = site.data.contact -%}
+            {%- for entry in con -%}
+                {%- assign key = entry | first -%}
+                {% if con[key].id %}
+            <a target="blank" class="footer-image-link" href="{{ con[key].href }}{{ con[key].id }}" title="{{ con[key].title }}"><img class="footer-icon" src="{{ con[key].icon }}"></a>
+                {%- endif -%}
+            {% endfor %}
+        {%- endif %}
+    </div>
+    <div class="footer-column footer-copyright">Copyright © {{site.data.meta.since}}-{{ 'now' | date: "%Y" }} <a class="footer-link" href="{{site.data.contact.email.href}}{{site.data.contact.email.id}}" target="blank">{{site.data.meta.author}}</a>.</div>
+</footer>
+
