@@ -1,1 +1,0 @@
-*[SME]: Subject Matter Expert

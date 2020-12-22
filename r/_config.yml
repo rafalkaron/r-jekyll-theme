@@ -1,9 +1,0 @@
-livereload: true
-exclude: 
-  - LICENSE
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-markdown: kramdown
-kramdown:
-  input: GFM
