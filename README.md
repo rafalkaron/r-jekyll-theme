@@ -1,11 +1,12 @@
 # r-jekyll-theme
-A simple red Jekyll with left navigation that's perfect for portfolios and resumes.
+A simple red Jekyll with left navigation that's perfect for portfolios and resumes.  
+See the [sample r-jekyll-theme implementation](https://rafalkaron.github.io/r-jekyll-theme).
 
 ## Installation
-You can install a github-remote or gem-based r-jekyll-theme.
+You can install the github-remote or gem-based r-jekyll-theme.
 
-### Installing the github-remote-r-jekyll-theme
-This is the recommended theme installation method if you plan to deploy your Jekyll site to GitHub-Pages
+### Installing the github-remote r-jekyll-theme
+This is the recommended theme installation method if you plan to deploy your Jekyll site to GitHub-Pages.
 
 1. To your Jekyll site `Gemfile`, add: 
     ```ruby
@@ -21,8 +22,8 @@ This is the recommended theme installation method if you plan to deploy your Jek
     ```
 1. Run: `$ bundle`
 
-### Installing the gem based r-jekyll-theme
-This is the recommended theme installation if you're into old school.
+### Installing the gem-based r-jekyll-theme
+This is the recommended theme installation method if you're into old school.
 
  1. To your Jekyll site `Gemfile`, add:
     ```ruby
@@ -39,10 +40,10 @@ This is the recommended theme installation if you're into old school.
 ## Usage
 
 ### Adding content
-You add content by creating Markdown files in the root site directory.  
+You add content by creating Markdown files in the root directory of your Jekyll site.  
 **NOTE:** You should start adding content by creating the `index.md` file.
 
-1. in the site root directory, create a markdown file.  
+1. in the root directory of your Jekyll site, create a markdown file.  
 For example, create the `index.md` file.
 1. Open the file and add:
 ```markdown
@@ -57,12 +58,28 @@ Where:
  * `title` is the page title that displays in the navigation and in the tab.
  * `order` is the position of the page in the navigation.
 1. Add content.  
-For reference, see [content.md](content.md)
-2. Save the file.
+For reference, see [content.md](https://raw.githubusercontent.com/rafalkaron/r-jekyll-theme/main/content.md)
+1. Save the Markdown file.
 
-### Layouts
+### Adding media
+To keep files organized, add media to the `assets` directory.
 
-### SASS
+### Configuring site metadata and contact info
+You configure site metadata and contact information by editing the `_confing.yml` file.
+
+### Styling
+You can override the default styling by creating the `main.scss` file in the `assets` directory.
+
+1. In the root directory of your Jekyll site, create the `assets` directory.
+2. In the `assets` directory, create and open the `main.scss` file.
+3. To the `main.scss` file, paste:
+```scss
+---
+---
+@import "r";
+```
+5. Under the `@import` rule, add your styling.
+4. Save the `main.scss` file.
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/rafalkaron/r-jekyll-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
