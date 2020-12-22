@@ -26,15 +26,39 @@ This is the recommended theme installation if you're into old school.
 
  1. To your Jekyll site `Gemfile`, add:
     ```ruby
+    gem 'github-pages', group: :jekyll_plugins
+    gem "jekyll", "~> 3.9"
     gem "r-jekyll-theme"
     ```
- 1. To your Jekyll site `_config.yml`, and add:
+ 2. To your Jekyll site `_config.yml`, and add:
     ```yaml
     theme: r-jekyll-theme
     ```
- 1. Run: `$ bundle`
+ 3. Run: `$ bundle`
 
 ## Usage
+
+### Adding content
+You add content by creating Markdown files in the root site directory.  
+**NOTE:** You should start adding content by creating the `index.md` file.
+
+1. in the site root directory, create a markdown file.  
+For example, create the `index.md` file.
+1. Open the file and add:
+```markdown
+---
+layout: default
+title: Home
+order: "0"
+---
+```
+Where:
+ * `layout` is the site HTML template. Always use the `default` value.
+ * `title` is the page title that displays in the navigation and in the tab.
+ * `order` is the position of the page in the navigation.
+1. Add content.  
+For reference, see [content.md](content.md)
+2. Save the file.
 
 ### Layouts
 
