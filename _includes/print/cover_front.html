@@ -1,0 +1,12 @@
+<div class="print" id="cover-front">
+    <div id="cover-front-content">
+        {%- if site.logo %}
+            <a target="blank" href="index.html" id="site-logo">{{ site.logo }}</a>
+        {%- endif %}
+        <div id="site-reference-container">
+            <a target="blank" id="site-reference" href="index.html">rafalkaron.github.io</a>
+            <div class="footer-column copyright">Copyright © {{site.since}}-{{ 'now' | date: "%Y" }} <a class="footer-link" href="{{site.email.href}}{{site.email.id}}" target="blank">{{site.author}}</a>.</div>        
+        </div>
+
+    </div>
+</div>

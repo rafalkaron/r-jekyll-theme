@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+{%- include head.html %}
+
+<body>
+    {%- include print/cover_front.html -%}
+    {%- include header.html -%}
+
+<main id="page-content" class="content {{ page.outputclass }}">
+
+    {% include content/multipage.html -%}
+    
+</main>
+
+{%- include footer.html -%}
+{%- include print/cover_back.html -%}
+
+</body>
+
+</html> 
