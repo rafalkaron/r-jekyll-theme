@@ -5,11 +5,16 @@ See the [sample r-jekyll-theme implementation](https://rafalkaron.github.io/r-je
 ## Installation
 You can install the github-remote or gem-based r-jekyll-theme.
 
+### Preparing for theme installation
+You need to create a directory for your Jekyll site and initialize a `Gemfile`.
+
+1. Create a directory in which you like to develop your site.
+1. Run `bundle init`  
+**Result:** A `Gemfile` is created.
+
 ### Installing the github-remote r-jekyll-theme
 This is the recommended theme installation method if you plan to deploy your Jekyll site to GitHub-Pages.
 
-1. Run `bundle init`  
-**Result:** A `Gemfile` is created.
 1. To your Jekyll site `Gemfile`, add: 
     ```ruby
     gem "jekyll-remote-theme"
@@ -27,8 +32,6 @@ This is the recommended theme installation method if you plan to deploy your Jek
 ### Installing the gem-based r-jekyll-theme
 This is the recommended theme installation method if you're into old school.
 
- 1. Run `bundle init`  
- **Result:** A `Gemfile` is created.
  1. To your Jekyll site `Gemfile`, add:
     ```ruby
     gem 'github-pages', group: :jekyll_plugins
@@ -63,11 +66,17 @@ where:
  * `title` is the page title that appears in the site navigation and in the web browser tab.
  * `order` is the position of the page in the navigation.
 1. Add content.  
-For reference, see [content.md](https://raw.githubusercontent.com/rafalkaron/r-jekyll-theme/main/content.md).
+For reference, see [content.md](https://raw.githubusercontent.com/rafalkaron/r-jekyll-theme/main/content.md).  
+**TIP:** To keep your files organized, add any media files to the `assets` directory.
 1. Save the Markdown file.
 
-### Adding media
-To keep files organized, add media to the `assets` directory.
+### Previewing content
+1. Set up your development environment by running `bundle install`  
+**Result:** Your theme is setup just like a normal Jekyll site!
+2. Run `bundle exec jekyll serve`.
+3. In your web browser, go to `http://localhost:4000`
+4. Add pages, documents, data, styling etc.
+**Info:** As you make modifications to your theme and to your content, your site will regenerate automatically in the web browser. However, to see any `_config.yml` updates, you need to restart the server.
 
 ### Configuring site metadata and contact info
 You configure site metadata and contact information by editing the `_confing.yml` file.
@@ -88,14 +97,6 @@ You can override the default styling by creating the `main.scss` file in the `as
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/rafalkaron/r-jekyll-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-1. Set up your development environment by running `bundle install`  
-**Result:** Your theme is setup just like a normal Jekyll site!
-2. Run `bundle exec jekyll serve`.
-3. In your web browser, go to `http://localhost:4000`
-4. Add pages, documents, data, styling etc.
-**Info:** As you make modifications to your theme and to your content, your site will regenerate automatically in the web browser. However, to see any `_config.yml` updates, you need to restart the server.
 
 ## License
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
