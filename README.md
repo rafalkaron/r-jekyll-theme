@@ -9,36 +9,38 @@ You can install the github-remote or gem-based r-jekyll-theme.
 You need to create a directory for your Jekyll site and initialize a `Gemfile`.
 
 1. Create a directory in which you like to develop your site.
-1. Run `bundle init`  
+1. In the site directory, run `bundle init`  
 **Result:** A `Gemfile` is created.
 
 ### Installing the github-remote r-jekyll-theme
 This is the recommended theme installation method if you plan to deploy your Jekyll site to GitHub-Pages.
 
-1. To your Jekyll site `Gemfile`, add: 
+1. To the `Gemfile`, add: 
     ```ruby
     gem "jekyll-remote-theme"
     gem 'github-pages', group: :jekyll_plugins
     gem "jekyll", "~> 3.9"
     ```
-2. To your Jekyll site `_config.yml` file, add:
+2. To the site directory, downlad the [_config.yml](https://raw.githubusercontent.com/rafalkaron/r-jekyll-theme/main/_config.yml) file.
+3. To the `_config.yml` file, add:
     ```yaml
     plugins:
     - jekyll-remote-theme
     remote_theme: rafalkaron/r-jekyll-theme@main
     ```
-3. Run `bundle`
+4. Run `bundle`
 
 ### Installing the gem-based r-jekyll-theme
 This is the recommended theme installation method if you're into old school.
 
- 1. To your Jekyll site `Gemfile`, add:
+ 1. To the `Gemfile`, add:
     ```ruby
     gem 'github-pages', group: :jekyll_plugins
     gem "jekyll", "~> 3.9"
     gem "r-jekyll-theme"
     ```
- 2. To your Jekyll site `_config.yml` file, add:
+ 2. To the site directory, downlad the [_config.yml](https://raw.githubusercontent.com/rafalkaron/r-jekyll-theme/main/_config.yml) file.
+ 2. To the `_config.yml` file, add:
     ```yaml
     theme: r-jekyll-theme
     ```
