@@ -17,6 +17,7 @@ This is the recommended theme installation method if you plan to deploy your Jek
 
 1. To the `Gemfile`, add: 
     ```ruby
+    gem "github-pages"
     gem "jekyll-remote-theme"
     ```
 2. In the site directory, create a `_config.yml` file.
@@ -33,6 +34,7 @@ This is the recommended theme installation method if you're into old school.
 
  1. To the `Gemfile`, add:
     ```ruby
+    gem "github-pages"
     gem "r-jekyll-theme"
     ```
  2. In the site directory, create a `_config.yml` file.
