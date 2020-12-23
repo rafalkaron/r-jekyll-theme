@@ -44,7 +44,7 @@ This is the recommended theme installation method if you're into old school.
     ```yaml
     theme: r-jekyll-theme
     ```
- 3. Run: `$ bundle`
+ 3. Run: `bundle`
 
 ## Usage
 The r-jekyll-theme requires little configuration. You just need to add some content and fill in the `_config.yml` file with your site data.
