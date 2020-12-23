@@ -59,3 +59,4 @@ build-iPhoneSimulator/
 settings.json
 .vscode
 _site/
+Gemfile.lock
