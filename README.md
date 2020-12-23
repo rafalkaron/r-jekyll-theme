@@ -8,15 +8,15 @@ You can install the github-remote or gem-based r-jekyll-theme. You can also fork
 ### Preparing for the theme installation
 You need to create a directory for your Jekyll site and initialize a `Gemfile`.
 
-1. Create a directory in which you like to develop your site.
+#### Before you begin
+Ensure that you have Ruby and Jekyll installed. See [Jekyll - Quickstart](https://jekyllrb.com/docs/)
+
+1. Create a directory in which you want to develop your Jekyll site.
 2. In the site directory, run `bundle init`  
 **Result:** A `Gemfile` is created.
 
 ### Installing the github-remote-theme
-This is the recommended theme installation method if you plan to deploy your Jekyll site to GitHub-Pages.
-
-#### Before you begin
-Ensure that you have Ruby and Jekyll installed. See [Jekyll - Quickstart](https://jekyllrb.com/docs/)
+If you plan to deploy your Jekyll site to GitHub-Pages, use this installation method.
 
 1. To the `Gemfile`, add: 
     ```ruby
@@ -33,7 +33,7 @@ Ensure that you have Ruby and Jekyll installed. See [Jekyll - Quickstart](https:
 4. Run `bundle`
 
 ### Installing the gem-based theme
-This is the recommended theme installation method if you're into old school.
+If you're into old school, use this installation method.
 
  1. To the `Gemfile`, add:
     ```ruby
@@ -41,14 +41,14 @@ This is the recommended theme installation method if you're into old school.
     gem "r-jekyll-theme"
     ```
  2. In the site directory, create a `_config.yml` file.
- 2. To the `_config.yml` file, add:
+ 3. To the `_config.yml` file, add:
     ```yaml
     theme: r-jekyll-theme
     ```
- 3. Run `bundle`
+ 4. Run `bundle`
 
 ### Forking the theme GitHub repository
-This is the recommended theme installation method if you want to heavily modify the template.
+If you want to heavily modify the template, use this installation method.
 
 1. Fork the [r-jekyll-theme](https://github.com/rafalkaron/r-jekyll-theme) repository.
 2. In the root directory of the forked repository, run `bundle`
