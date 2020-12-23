@@ -46,6 +46,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - r-jekyll-theme.gemspec
 markdown: kramdown
 kramdown:
   input: GFM
