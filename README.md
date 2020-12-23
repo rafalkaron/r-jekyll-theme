@@ -70,10 +70,10 @@ For example, create the `index.md` file.
     order: "0"
     ---
     ```
-where:
- * `layout` is the site HTML template. Always use the `default` value.
- * `title` is the page title that appears in the site navigation and in the web browser tab.
- * `order` is the position of the page link in the site navigation.
+    where:
+    * `layout` is the site HTML template. Always use the `default` value.
+    * `title` is the page title that appears in the site navigation and in the web browser tab.
+    * `order` is the position of the page link in the site navigation.
 1. Add Markdown (Kramdown) content.  
 For reference, see [content.md](https://raw.githubusercontent.com/rafalkaron/r-jekyll-theme/main/content.md).  
 **TIP:** To keep your files organized, add any media files to the `assets` directory.
