@@ -15,6 +15,9 @@ You need to create a directory for your Jekyll site and initialize a `Gemfile`.
 ### Installing the github-remote-theme
 This is the recommended theme installation method if you plan to deploy your Jekyll site to GitHub-Pages.
 
+#### Before you begin
+Ensure that you have Ruby and Jekyll installed. See [Jekyll - Quickstart](https://jekyllrb.com/docs/)
+
 1. To the `Gemfile`, add: 
     ```ruby
     gem "github-pages"
@@ -70,22 +73,14 @@ order: "0"
 where:
  * `layout` is the site HTML template. Always use the `default` value.
  * `title` is the page title that appears in the site navigation and in the web browser tab.
- * `order` is the position of the page in the navigation.
+ * `order` is the position of the page in the site navigation.
 1. Add content.  
 For reference, see [content.md](https://raw.githubusercontent.com/rafalkaron/r-jekyll-theme/main/content.md).  
 **TIP:** To keep your files organized, add any media files to the `assets` directory.
 1. Save the Markdown file.
 
-### Previewing your site
-1. Set up your development environment by running `bundle install`  
-2. Run `bundle exec jekyll serve`
-3. In your web browser, go to `http://localhost:4000`
-4. Add pages, documents, data, styling etc.  
-For more information, see [Jekyll Home](https://jekyllrb.com/).
-**Info:** As you modify the theme or add content, your site regenerates automatically in the web browser. However, to see any `_config.yml` updates, you need to restart the server.
-
 ### Configuring site metadata and contact info
-You configure site metadata and contact information by editing the `_confing.yml` file. See the default [_config.yml](https://raw.githubusercontent.com/rafalkaron/r-jekyll-theme/main/_config.yml) file that you can customize.
+You configure site metadata and contact information by editing the `_confing.yml` file. For reference, see the default [_config.yml](https://raw.githubusercontent.com/rafalkaron/r-jekyll-theme/main/_config.yml).
 
 ### Styling
 You can override the default styling by creating the `main.scss` file in the `assets` directory.
@@ -100,3 +95,16 @@ You can override the default styling by creating the `main.scss` file in the `as
 ```
 5. Under the `@import "r";` rule, add your styling.
 4. Save the `main.scss` file.
+
+### Previewing your site
+You can generate and preview your site locally before publishing it.
+
+1. Set up your development environment by running `bundle install`  
+2. Run `bundle exec jekyll serve`
+3. In your web browser, go to `http://localhost:4000`
+4. Add pages, documents, data, styling etc. For more information, see [Jekyll Home](https://jekyllrb.com/).  
+**Info:** As you modify the theme or add content, your site should regenerate automatically in the web browser. However, to see any `_config.yml` updates, you need to restart the server.  
+If your site does not regenerate automatically in the web browser, ensure that you have the following added to your `_config.yml` file:
+```yaml
+livereload: true
+```
