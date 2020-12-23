@@ -9,7 +9,7 @@ You can install the github-remote or gem-based r-jekyll-theme. You can also fork
 You need to create a directory for your Jekyll site and initialize a `Gemfile`.
 
 #### Before you begin
-Ensure that you have Ruby and Jekyll installed. See [Jekyll - Quickstart](https://jekyllrb.com/docs/)
+Ensure that you have Ruby and Jekyll installed. See [Jekyll - Quickstart](https://jekyllrb.com/docs/).
 
 1. Create a directory in which you want to develop your Jekyll site.
 2. In the site directory, run `bundle init`  
@@ -23,7 +23,7 @@ If you plan to deploy your Jekyll site to GitHub-Pages, use this installation me
     gem "github-pages"
     gem "jekyll-remote-theme"
     ```
-2. In the site directory, create a `_config.yml` file.
+2. In the site directory, create the `_config.yml` file.
 3. To the `_config.yml` file, add:
     ```yaml
     plugins:
@@ -40,7 +40,7 @@ If you're into old school, use this installation method.
     gem "github-pages"
     gem "r-jekyll-theme"
     ```
- 2. In the site directory, create a `_config.yml` file.
+ 2. In the site directory, create the `_config.yml` file.
  3. To the `_config.yml` file, add:
     ```yaml
     theme: r-jekyll-theme
@@ -60,7 +60,7 @@ The r-jekyll-theme requires little configuration. You just need to add some cont
 You add content by creating Markdown files in the root directory of your Jekyll site.  
 **NOTE:** You should start adding your content by creating the `index.md` file.
 
-1. in the root directory of your Jekyll site, create a Markdown file.  
+1. In the root directory of your Jekyll site, create a Markdown file.  
 For example, create the `index.md` file.
 1. Open the file and add:
 ```markdown
@@ -73,8 +73,8 @@ order: "0"
 where:
  * `layout` is the site HTML template. Always use the `default` value.
  * `title` is the page title that appears in the site navigation and in the web browser tab.
- * `order` is the position of the page in the site navigation.
-1. Add content.  
+ * `order` is the position of the page link in the site navigation.
+1. Add Markdown (Kramdown) content.  
 For reference, see [content.md](https://raw.githubusercontent.com/rafalkaron/r-jekyll-theme/main/content.md).  
 **TIP:** To keep your files organized, add any media files to the `assets` directory.
 1. Save the Markdown file.
@@ -105,6 +105,6 @@ You can generate and preview your site locally before publishing it.
 4. Add pages, documents, data, styling etc. For more information, see [Jekyll Home](https://jekyllrb.com/).  
 **Info:** As you modify the theme or add content, your site should regenerate automatically in the web browser. However, to see any `_config.yml` updates, you need to restart the server.  
 If your site does not regenerate automatically in the web browser, ensure that you have the following added to your `_config.yml` file:
-```yaml
-livereload: true
-```
+    ```yaml
+    livereload: true
+    ```
