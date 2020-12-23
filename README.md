@@ -63,13 +63,13 @@ You add content by creating Markdown files in the root directory of your Jekyll 
 1. In the root directory of your Jekyll site, create a Markdown file.  
 For example, create the `index.md` file.
 1. Open the file and add:
-```markdown
----
-layout: default
-title: Home
-order: "0"
----
-```
+    ```markdown
+    ---
+    layout: default
+    title: Home
+    order: "0"
+    ---
+    ```
 where:
  * `layout` is the site HTML template. Always use the `default` value.
  * `title` is the page title that appears in the site navigation and in the web browser tab.
@@ -88,11 +88,11 @@ You can override the default styling by creating the `main.scss` file in the `as
 1. In the root directory of your Jekyll site, create the `assets` directory.
 2. In the `assets` directory, create and open the `main.scss` file.
 3. To the `main.scss` file, add:
-```scss
----
----
-@import "r";
-```
+    ```scss
+    ---
+    ---
+    @import "r";
+    ```
 5. Under the `@import "r";` rule, add your styling.
 4. Save the `main.scss` file.
 
