@@ -1,5 +1,5 @@
 ### Site metadata
-title: r
+title: Red
 author: Name Surname
 description: Site description
 keywords: comma, separated, keywords
@@ -47,6 +47,7 @@ exclude:
     - Gemfile.lock
     - README.md
     - r-jekyll-theme.gemspec
+    - r-jekyll-theme-0.1.2.gem
 markdown: kramdown
 kramdown:
     input: GFM

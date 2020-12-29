@@ -4,13 +4,16 @@
 
 <ul class="{{ page.title | slugify }}">
     {%- for path in page_paths %}
-        {%- assign toc_page = site.pages | where: "path", path | first -%}
-        {%- assign link_title = toc_page.title -%}
-        {%- if toc_page.navtitle -%}
-            {% assign link_title = toc_page.navtitle %}
-        {% endif %}
+    {%- assign toc_page = site.pages | where: "path", path | first -%}
+    {%- assign link_title = toc_page.title -%}
+    {%- if toc_page.navtitle -%}
+    {% assign link_title = toc_page.navtitle %}
+    {% endif %}
     <li><a href="{{ toc_page.url | relative_url }}" class="nav-link {{ toc_page.title | slugify }}">{{ link_title | escape }}</a></li>
     {%- endfor %}
+    {%- if site.posts -%}
+        <li><a href="/blog.html" class="nav-link blog">Blog</a></li>
+    {% endif %}
 </ul>
 
 <style>

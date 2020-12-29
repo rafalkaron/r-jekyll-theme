@@ -1,8 +1,8 @@
 ---
-title: Dream Markdown Authoring Setup
+title: Sample blog post
 layout: post
-#author: Rafal
-#modified_date: 2020-11-12
+author: Rafal
+modified_date: 2020-11-18
 ---
 
 ## Header 2
