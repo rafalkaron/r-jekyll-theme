@@ -5,7 +5,7 @@ author: Name Surname
 #excerpt: custom excerpt
 #excerpt_separator: <!--excerpt-->
 category: Category A
-tags: tag_a tag_b tag_c tagggg
+tags: tag_a tag_b
 modified_date: 2020-11-18
 ---
 

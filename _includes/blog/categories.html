@@ -1,5 +1,5 @@
 <div id="categories-container">
-    <h1 id="posts-categories-header">Categories</h1>
+    <h1 class="blog-header" id="blog-categories">Categories</h1>
     {% for category in site.categories %}
         <div class="category-group">
         {% capture category_name %}{{ category | first }}{% endcapture %}

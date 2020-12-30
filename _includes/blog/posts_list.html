@@ -4,7 +4,7 @@
 {%- assign date_format = site.date_format | default:"%b %-d, %Y" -%}
 
 <div id="post-list-container">
-<h1 id="{{year.name | slugify }}"> {{ year.name }} </h1>
+<h1 class="blog-header blog-header-year" id="{{year.name | slugify }}">{{ year.name }}</h1>
     {% for post in year.items %}
     <ul id="post-list">
     
