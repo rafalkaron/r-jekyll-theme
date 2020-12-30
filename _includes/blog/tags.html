@@ -1,0 +1,16 @@
+<div id="tags-container">
+    <h1 id="posts-categories-header">Tags</h1>
+    {% for tag in site.tags %}
+        <div class="tag-group" id="{{ tag_name | slugize }}">
+        {% capture tag_name %}{{ tag | first }}{% endcapture %}
+    
+        <h2 class="tag-head">{{ tag_name }}</h2>
+        <ul>
+            {% for post in site.tags[tag_name] %}
+            <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+            {% endfor %}        
+        </ul>
+        
+        </div>
+    {% endfor %}
+</div>
