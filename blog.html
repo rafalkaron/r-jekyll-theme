@@ -10,6 +10,7 @@ order: "99"
     <ul>
         {%- for post in site.posts %}
         <li><a href="#{{post.title}}" class="nav-link {{post.title}} | slugify }}"> {{post.title}}</a></br>
+        {%- if post.shortdesc -%} {{post.shortdesc}}{%- endif -%} 
         <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
             {{ post.date | date: date_format }}</time>
             {%- if post.modified_date -%} ~

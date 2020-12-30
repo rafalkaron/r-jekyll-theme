@@ -2,12 +2,13 @@
 title: Sample blog post
 layout: post
 author: Rafal
+shortdesc: Exercitation sunt sit in tempor eu consequat laborum nulla exercitation nulla dolore cupidatat.
 modified_date: 2020-11-18
 ---
 
 ## Header 2
 
-Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit.
+Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit.{:.shortdesc}
 
 ### Header 3
 
