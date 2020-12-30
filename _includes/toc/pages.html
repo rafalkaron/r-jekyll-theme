@@ -1,4 +1,8 @@
-{%- assign default_paths = site.pages | where: "layout", "default"| sort: "order" | map: "path" -%}
+{%- assign default_paths = site.pages | where: "layout", "default" -%}
+{%- assign default_paths = site.pages | where: "layout", "blog" | concat: default_paths -%}
+{%- assign default_paths = default_paths | sort: "order" | map: "path" -%}
+
+
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 
 

@@ -3,6 +3,7 @@
 {% for year in postsByYear %}
 {%- assign date_format = site.date_format | default:"%b %-d, %Y" -%}
 
+<article>
 <h1 id="{{year.name | slugify }}"> {{ year.name }} </h1>
     {% for post in year.items %}
     <ul id="post-list">
@@ -52,4 +53,5 @@
         </li>
     {% endfor %}
     </ul>
+</article>
 {% endfor %}

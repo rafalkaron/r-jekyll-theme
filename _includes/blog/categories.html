@@ -1,8 +1,7 @@
-<h1 id="posts-categories-header">Categories</h1>
-
-<div id="categories">
+<article id="categories">
+    <h1 id="posts-categories-header">Categories</h1>
     {% for category in site.categories %}
-        <div class="category-group" id="#{{ category_name | slugize }}">
+        <div class="category-group" id="{{ category_name | slugize }}">
         {% capture category_name %}{{ category | first }}{% endcapture %}
     
         <h2 class="category-head">{{ category_name }}</h2>
@@ -15,5 +14,4 @@
 
         </div>
     {% endfor %}
-    </div>
-
+</article>
