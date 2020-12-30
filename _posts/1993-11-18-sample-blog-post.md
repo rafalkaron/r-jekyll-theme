@@ -1,5 +1,6 @@
 ---
 title: Sample blog post
+image: "/assets/blog/neonbrand-Ak5c5VTch5E-unsplash.jpg"
 layout: post
 author: Name Surname
 #excerpt: custom excerpt

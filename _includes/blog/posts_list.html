@@ -2,8 +2,9 @@
 
 <ul id="post-list">
     {%- for post in site.posts %}
-    <li class="post-item"><a href="{{ post.url }}" class="post-link"><h1 id="{{post.title | slugify }}">{{post.title}}</h1> </a>
-        
+    <li class="post-item">
+        <a href="{{ post.url }}" class="post-link"><h1 id="{{post.title | slugify }}">{{post.title}}</h1> </a>
+
         <div class="post-meta">
             <div class="post-info">
                 {%- if post.date -%}
@@ -23,15 +24,17 @@
                 <span class="p-author h-card" itemprop="name">{{ post.author }}</span>
                 {% endif -%}
             </div>
-
+            
+            {%- if post.image -%}
+            <img class="post-image" src="{{ post.image }}">
+            {%- endif -%}
             {%- if post.tags -%}
                 <ul class="post-tags">
                 {%- for tag in post.tags %}
                     <li class="post-tag">{{tag}}</li>
                 {%- endfor -%}
+                {%- endif -%}
                 </ul>
-            {%- endif -%}
-
             {%- if post.excerpt -%}
             <div class="post-excerpt">{{post.excerpt}}</div>
             {%- endif -%}
