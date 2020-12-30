@@ -11,9 +11,9 @@
     {% endif %}
     <li><a href="{{ toc_page.url | relative_url }}" class="nav-link {{ toc_page.title | slugify }}">{{ link_title | escape }}</a></li>
     {%- endfor %}
-    {%- if site.posts -%}
+    <!-- {%- if site.posts -%}
         <li><a href="/blog.html" class="nav-link blog">Blog</a></li>
-    {% endif %}
+    {% endif %} -->
 </ul>
 
 <style>

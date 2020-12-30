@@ -1,0 +1,10 @@
+{%- assign site_posts = site.posts sort: date | map: "path" -%}
+
+<ul class="{{ page.title | slugify }}">
+    {%- for post in site_posts %}
+    <li><a href="#post" class="nav-link {{ post.title | slugify }}"> {{post.title}}</a></li>
+    {%- endfor %}
+    {%- if site.posts -%}
+        <li><a href="/blog.html" class="nav-link blog">Blog</a></li>
+    {% endif %}
+</ul>
