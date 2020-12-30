@@ -15,7 +15,8 @@ html {
 @media only print {
     @import "r/layout/print";
 }
-@import "r/layout/columns";
+@import "r/layout/columns",
+"r/layout/blog";
 
 // Styling
 @import "r/styling/animations",

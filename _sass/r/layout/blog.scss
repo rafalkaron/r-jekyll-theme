@@ -1,0 +1,11 @@
+ul#post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a.post-link,
+    a.post-link:hover,
+    a.post-link:active {
+        text-decoration-color: $primary-color;
+    }
+}

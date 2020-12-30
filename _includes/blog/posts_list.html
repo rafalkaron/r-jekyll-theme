@@ -1,10 +1,10 @@
 {%- assign date_format = site.date_format | default:"%b %-d, %Y" -%}
 
-<ul id="post-links">
+<ul id="post-list">
     {%- for post in site.posts %}
-    <li><a href="{{ post.url }}" class="post-link {{post.title}} | slugify }}"> {{post.title}}</a>
-        <div class="post-meta">
+    <li><a href="{{ post.url }}" class="post-link"><h1 id="{{post.title | slugify }}">{{post.title}}</h1> </a>
         
+        <div class="post-meta">
             {%- if post.excerpt -%}
             <div class="post-excerpt">{{post.excerpt}}</div>
             {%- endif -%}
@@ -23,13 +23,14 @@
             {%- endif -%}
 
             {%- if post.author -%}<span> • </span>
-            {% for author in post.author %}
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-            {%- if forloop.last == false %},
+            <span class="p-author h-card" itemprop="name">{{ post.author }}</span>
             {% endif -%}
-            {% endfor %}
-            {%- endif -%}
         </div>
+
+        <div class="read-more">
+            <a href="{{ post.url }}" class="post-link">Read more...</a>
+        </div>
+
     </li>
     {%- endfor %}
 </ul>
