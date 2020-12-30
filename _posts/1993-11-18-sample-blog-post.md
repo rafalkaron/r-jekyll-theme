@@ -1,14 +1,18 @@
 ---
 title: Sample blog post
 layout: post
-author: Rafal
-shortdesc: Exercitation sunt sit in tempor eu consequat laborum nulla exercitation nulla dolore cupidatat.
+author: Name Surname
+#excerpt: custom excerpt
+#excerpt_separator: <!--excerpt-->
+category: Category A
 modified_date: 2020-11-18
 ---
 
+Excerpt: Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit.
+
 ## Header 2
 
-Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit.{:.shortdesc}
+Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit.
 
 ### Header 3
 

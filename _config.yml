@@ -51,6 +51,7 @@ exclude:
 markdown: kramdown
 kramdown:
     input: GFM
+
 ### GitHub-remote theme
 #plugins:
 # - jekyll-remote-theme
