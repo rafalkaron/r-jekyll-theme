@@ -40,6 +40,7 @@ contact:
         icon_dark: "/assets/icons/500px_dark.svg"
 
 ### Site configuration
+permalink: /:categories/:title/
 livereload: true
 exclude:
     - LICENSE
