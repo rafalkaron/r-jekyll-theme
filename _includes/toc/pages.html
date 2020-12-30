@@ -1,10 +1,5 @@
-{%- assign default_paths = site.pages | where: "layout", "default" -%}
-{%- assign default_paths = site.pages | where: "layout", "blog" | concat: default_paths -%}
-{%- assign default_paths = default_paths | sort: "order" | map: "path" -%}
-
-
+{%- assign default_paths = site.pages | where: "layout", "default" | sort: "order" | map: "path" -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
-
 
 <ul class="{{ page.title | slugify }}">
     {%- for path in page_paths %}
@@ -15,9 +10,6 @@
     {% endif %}
     <li><a href="{{ toc_page.url | relative_url }}" class="nav-link {{ toc_page.title | slugify }}">{{ link_title | escape }}</a></li>
     {%- endfor %}
-    <!-- {%- if site.posts -%}
-        <li><a href="/blog.html" class="nav-link blog">Blog</a></li>
-    {% endif %} -->
 </ul>
 
 <style>

@@ -1,4 +1,4 @@
-<article id="categories">
+<div id="categories-container">
     <h1 id="posts-categories-header">Categories</h1>
     {% for category in site.categories %}
         <div class="category-group" id="{{ category_name | slugize }}">
@@ -14,4 +14,4 @@
 
         </div>
     {% endfor %}
-</article>
+</div>
