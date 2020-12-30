@@ -5,4 +5,4 @@ navtitle: Blog
 order: "4"
 ---
 
-{% include blog/posts_list.html %}
+{% include blog/posts_list.html -%}

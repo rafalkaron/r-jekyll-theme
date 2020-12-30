@@ -3,16 +3,45 @@ ul#post-list {
     padding: 0;
     margin: 0;
 
-    a.post-link,
-    a.post-link:hover,
-    a.post-link:active {
-        text-decoration-color: $primary-color;
+    li.post-item + li.post-item {
+        border-top: 0.5rem dotted $background-middle;
+    }
+
+    li.post-item {
+        margin: 0;
+        padding: 0;
+        
+        a.post-link,
+        a.post-link:hover,
+        a.post-link:active {
+            text-decoration-color: $primary-color;
+        }
+        div.post-info {
+            margin-top: $margin;
+
+            * {
+                font-weight: bold;
+            }
+        }
+
+        div.post-excerpt {
+            p {
+                margin-top: $margin-small;
+            }
+        }
+
+        div.read-more {
+            text-align: right;
+            
+            a.read-more-link {
+                font-size: 1.8rem;
+            }
+        }
     }
 
     ul.post-tags {
         display: flex;
         flex-wrap: wrap;
-        margin: 0.8rem 0 0 0;
         padding: 0;
         
         li {
