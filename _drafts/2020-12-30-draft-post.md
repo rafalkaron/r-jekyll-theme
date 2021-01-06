@@ -19,7 +19,3 @@ Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit.
 ## Header 2 lorem ipsum lorem
 
 ## Header 2
-
-{% include print/print_button.html %}
-{% include blog/share_this_post.html %}
-{% include blog/go_back_to_blog.html %}

@@ -199,5 +199,3 @@ Ut est sit voluptate esse non sunt ea mollit. Anim est cillum sit deserunt paria
 ## Print button
 
 {% include print/print_button.html %}
-{% include blog/share_this_post.html %}
-{% include blog/go_back_to_blog.html %}

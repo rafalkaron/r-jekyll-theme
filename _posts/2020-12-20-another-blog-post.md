@@ -22,7 +22,3 @@ Et ipsum irure minim adipisicing quis qui anim.
 #### Header 4
 
 Quis sint labore sunt et cupidatat excepteur amet aute.
-
-{% include print/print_button.html %}
-{% include blog/share_this_post.html %}
-{% include blog/go_back_to_blog.html %}
