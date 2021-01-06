@@ -60,3 +60,4 @@ settings.json
 .vscode
 _site/
 Gemfile.lock
+vendor
