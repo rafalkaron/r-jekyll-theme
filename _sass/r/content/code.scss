@@ -25,6 +25,8 @@ pre {
     padding: 0;
     display: block;
     border-radius: $border-radius;
+    width: fit-content;
+    max-width: 100%;
 }
 
 @media screen {
