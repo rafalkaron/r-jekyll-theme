@@ -9,7 +9,11 @@
 	<main id="page-content" class="content {{ page.outputclass }}">
 
 		<article class="post">
-			<h1 class="post-title"> {{ page.title | escape }} </h1>
+			<h1 class="post-title">			{%- if page.image -%} <img class="post-image" src="{{ page.image }}"> {% endif %}
+				{{ page.title | escape }} </h1>
+			
+
+
 			{% include blog/post_meta.html -%}
 			
 			{{ content }}

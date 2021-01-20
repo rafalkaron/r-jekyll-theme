@@ -111,3 +111,12 @@ ul.post-tags {
         color: $secondary-color;
     }
 }
+
+article.level-1 img.post-image {
+    margin-bottom: -2.5rem;
+    margin-top: $margin;
+}
+
+article.post img.post-image {
+    margin-top: 0;
+}
