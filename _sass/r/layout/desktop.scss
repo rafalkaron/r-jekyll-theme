@@ -35,7 +35,9 @@ article {
     padding: 5rem 10rem;
 }
 
-article + article {
+article + article,
+div#categories-container,
+div#tags-container {
     border-top: 0.5rem dotted $background-middle;
 }
 
