@@ -5,15 +5,10 @@ h1.blog-header {
 }
 
 h1.blog-header-year {
-    font-size: 10rem;
     line-height: 1em;
 }
 
 div#post-list-container {
-
-    article + article {
-        border-top: none;
-    }
 
     ul#post-list {
         list-style: none;
