@@ -23,16 +23,6 @@
                     
                 {% include toc/sections.html html=content anchor_class="nav-link" h_min=2 h_max=2 sanitize=true skip_no_ids=true %}
                 
-                <style>
-                    div#toc-sections a.nav-link::before {
-                        content: "• ";
-                        color: #f4f4f481;
-                    }
-
-                    div#toc-sections a.nav-link-top::before {
-                        content: none;
-                    }
-                </style>
                 {%- endif %}
             </div>
         </div>
