@@ -1,15 +1,13 @@
-{% assign postsByYear =
-    site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
 {%- assign date_format = site.date_format | default:"%b %-d, %Y" -%}
 
 <div id="post-list-container">
-<h1 class="blog-header blog-header-year" id="{{year.name | slugify }}">{{ year.name }}</h1>
     {% for post in year.items %}
     <ul id="post-list">
     
         <li class="post-item">
-            <a href="{{ post.url }}" class="post-link"> {%- if post.image -%} <img class="post-image" src="{{ post.image }}"> {%- endif -%}<h2 id="{{post.title | slugify }}">{{post.title}}</h2> </a>
+            <a href="{{ post.url }}" class="post-link"> <h1 id="{{post.title | slugify }}"> {%- if post.image -%} <img class="post-image" src="{{ post.image }}"> {%- endif -%}{{post.title}}</h1> </a>
             {% include blog/post_meta.html -%}
             <div class="read-more">
                 <a href="{{ post.url }}" class="read-more-link"> Read more...</a>

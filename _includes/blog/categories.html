@@ -1,15 +1,16 @@
+{% if site.categories %}
 <div id="categories-container">
     <h1 class="blog-header" id="blog-categories">Categories</h1>
     {% for category in site.categories %}
-        <div class="category-group">
+    <div class="category-group">
         {% capture category_name %}{{ category | first }}{% endcapture %}
-        <h2 id="{{ category_name | slugize }}" class="category-head">{{ category_name }}</h2>
+        <h3 id="{{ category_name | slugize }}" class="category-head">{{ category_name }}</h3>
         <ul class="post-tags">
             {% for post in site.categories[category_name] %}
             <li class="post-tag"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
-            {% endfor %}        
+            {% endfor %}
         </ul>
-        
-        </div>
+    </div>
     {% endfor %}
 </div>
+{%endif%}
