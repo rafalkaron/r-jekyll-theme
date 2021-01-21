@@ -36,6 +36,14 @@ article {
     padding: 5rem 5rem; 
 }
 
+div#post-list-container article{
+    padding: 2.5rem 5rem;
+}
+
+div#post-list-container {
+    margin-top: 2.5rem;
+}
+
 article + article,
 div#categories-container,
 div#tags-container  {
@@ -121,6 +129,7 @@ div#toc-sections li {
 #toc-pages a.nav-link {
     font-weight: bold;
     font-size: 2.2rem;
+
 }
 #toc-sections a.nav-link {
     font-size: 1.4rem;
