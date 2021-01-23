@@ -1,5 +1,5 @@
 ---
-title: Sample blog post
+title: Sample blog post C
 image: "/assets/blog/neonbrand-Ak5c5VTch5E-unsplash.jpg"
 layout: post
 author: Name Surname
@@ -9,6 +9,8 @@ category: Category A
 tags: tag_a tag_c
 modified_date: 2020-11-18
 ---
+
+{% include glossary.md %}
 
 Excerpt: Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit.Voluptate pariatur elit sit dolore irure est dolore.
 
@@ -31,8 +33,6 @@ Ut adipisicing excepteur id consequat sunt laborum eu nostrud et excepteur exerc
 ##### Header 6
 
 Qui laborum deserunt pariatur veniam et est laborum.
-
-{% include glossary.md %}
 
 ## Formatting
 
