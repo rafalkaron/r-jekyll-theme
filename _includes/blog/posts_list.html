@@ -2,6 +2,7 @@
 {% for year in postsByYear %}
 {%- assign date_format = site.date_format | default:"%b %-d, %Y" -%}
 
+{% if site.post %}
 <div id="post-list-container">
     {% for post in year.items %}
     <ul id="post-list">
@@ -18,3 +19,4 @@
     </ul>
 {% endfor %}
 </div>
+{%endif%}
