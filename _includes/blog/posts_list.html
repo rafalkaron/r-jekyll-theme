@@ -1,3 +1,4 @@
+{%if site.posts%}
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
 {%- assign date_format = site.date_format | default:"%b %-d, %Y" -%}
@@ -19,3 +20,4 @@
     </ul>
 {% endfor %}
 </div>
+{%endif%}
