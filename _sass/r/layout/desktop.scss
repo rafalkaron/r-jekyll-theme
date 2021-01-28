@@ -134,6 +134,11 @@ div#toc-pages li {
     list-style: none;
     padding-bottom: 0.8em;
 }
+
+div#toc-pages li:last-of-type {
+    padding-bottom: 0;
+}
+
 div#toc-sections li {
     list-style: none;
     padding-bottom: 0.4em;
