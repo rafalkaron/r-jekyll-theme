@@ -106,9 +106,12 @@ nav#site-nav {
 
 div#site-nav-page {
     padding: 0 1.5rem 0 0rem;
+    border-right: 0.25rem solid $text-light;
+
 }
 div#site-nav-section {
     padding: 0 0rem 0 1.5rem;
+    margin-left: -0.20rem;
     border-left: 0.25rem solid $text-light;
 }
 
