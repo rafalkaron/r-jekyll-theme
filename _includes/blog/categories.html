@@ -1,3 +1,4 @@
+{%if site.posts%}
 {% if site.categories %}
 <div id="categories-container">
     <h1 class="blog-header" id="blog-categories">Categories</h1>
@@ -13,4 +14,5 @@
     </div>
     {% endfor %}
 </div>
+{%endif%}
 {%endif%}
