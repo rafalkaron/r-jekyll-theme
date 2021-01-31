@@ -36,7 +36,17 @@ article {
     padding: 5rem 5rem; 
 }
 
-article + article {
+div#post-list-container article{
+    padding: 2.5rem 5rem;
+}
+
+div#post-list-container {
+    margin-top: 2.5rem;
+}
+
+article + article,
+div#categories-container,
+div#tags-container  {
     border-top: 0.5rem dotted $background-middle;
 }
 /*** Body - END */
@@ -47,7 +57,7 @@ header#site-header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 2.5rem 4.2rem $margin 4.2rem;
+    padding: 2.5rem 4.2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -65,7 +75,6 @@ div#site-logo-container {
     margin: 0 5rem 0 0;
     flex-grow: 0;
     flex-shrink: 0;
-    min-height: 10rem;
 }
 a#site-logo {
     font-size: 10rem;
@@ -73,6 +82,7 @@ a#site-logo {
     color: $text-light;
     text-decoration: none;
     line-height: 0.9em;
+    height: 0.7em;
     overflow: hidden;
     font-family: $logo-font;
     margin-left: -0.035em;
@@ -119,9 +129,10 @@ div#toc-sections li {
 #toc-pages a.nav-link {
     font-weight: bold;
     font-size: 2.2rem;
+
 }
 #toc-sections a.nav-link {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 a.nav-link {
     color: $text-light;
@@ -203,6 +214,7 @@ img.footer-icon {
     a#site-logo {
         font-size: 6.2rem;
         line-height: 0.9em;
+        margin-bottom: $margin-small;
         overflow: hidden;
     }
     nav#site-nav {
@@ -221,7 +233,7 @@ img.footer-icon {
         font-size: 2.2rem;
     }
     #toc-sections a.nav-link {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 }
 

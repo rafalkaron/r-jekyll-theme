@@ -1,5 +1,5 @@
 ### Site metadata
-title: r
+title: Red
 author: Name Surname
 description: Site description
 keywords: comma, separated, keywords
@@ -8,49 +8,50 @@ logo: "Red"
 
 ### Contact data
 contact:
-  email: 
-    id: 'mail@domain.com'
-    href: 'mailto:'
-    title: 'Email'
-    icon: "assets/icons/email.svg"
-    icon_dark: "assets/icons/email_dark.svg"
-  github: 
-    id: 'github_id'
-    href: 'https://github.com/'
-    title: 'GitHub'
-    icon: "assets/icons/github.svg"
-    icon_dark: "assets/icons/github_dark.svg"
-  linkedin:
-    id: 'linkedin_id'
-    href: 'https://linkedin.com/in/'
-    title: 'LinkedIn'
-    icon: "assets/icons/linkedin.svg"
-    icon_dark: "assets/icons/linkedin_dark.svg"
-  twitter: 
-    id: 'twitter_id'
-    href: 'https://twitter.com/'
-    title: 'Twitter'
-    icon: "assets/icons/twitter.svg"
-    icon_dark: "assets/icons/twitter_dark.svg"
-  500px:
-    id: '500px_id'
-    href: 'https://500px.com/'
-    title: '500px'
-    icon: "assets/icons/500px.svg"
-    icon_dark: "assets/icons/500px_dark.svg"
+    email:
+        id: "mail@domain.com"
+        href: "mailto:"
+        title: "Email"
+        icon: "/assets/icons/email.svg"
+        icon_dark: "/assets/icons/email_dark.svg"
+    github:
+        id: "github_id"
+        href: "https://github.com/"
+        title: "GitHub"
+        icon: "/assets/icons/github.svg"
+        icon_dark: "/assets/icons/github_dark.svg"
+    linkedin:
+        id: "linkedin_id"
+        href: "https://linkedin.com/in/"
+        title: "LinkedIn"
+        icon: "/assets/icons/linkedin.svg"
+        icon_dark: "/assets/icons/linkedin_dark.svg"
+    twitter:
+        id: "twitter_id"
+        href: "https://twitter.com/"
+        title: "Twitter"
+        icon: "/assets/icons/twitter.svg"
+        icon_dark: "/assets/icons/twitter_dark.svg"
+    500px:
+        id: "500px_id"
+        href: "https://500px.com/"
+        title: "500px"
+        icon: "/assets/icons/500px.svg"
+        icon_dark: "/assets/icons/500px_dark.svg"
 
 ### Site configuration
+permalink: blog/:categories/:title/
 livereload: true
-exclude: 
-  - LICENSE
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - r-jekyll-theme.gemspec
-  - vendor/
+exclude:
+    - LICENSE
+    - Gemfile
+    - Gemfile.lock
+    - README.md
+    - r-jekyll-theme.gemspec
+    - r-jekyll-theme-0.1.2.gem
 markdown: kramdown
 kramdown:
-  input: GFM
+    input: GFM
 
 ### GitHub-remote theme
 #plugins:

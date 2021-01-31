@@ -17,10 +17,10 @@ q::after {
 blockquote {
     width: fit-content;
     margin: $margin 0;
-    padding: 0 0.5rem 0 0.5rem;
-    background-color: $background-middle;
+    padding: 0 0.5rem 0 1.2rem;
     font-size: 1.3rem;
-    border-radius: $border-radius;
+    border-left: $border;
+    border-color: $background-middle;
 }
 blockquote * {
     font-size: 1.3rem;

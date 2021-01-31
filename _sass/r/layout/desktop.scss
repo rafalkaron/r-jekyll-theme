@@ -27,7 +27,7 @@ body {
 main#page-content {
     display: block;
     min-width: 60rem;
-    margin: 0 0 0 35rem;
+    margin: 0 0 0 40rem;
 }
 
 article {
@@ -35,8 +35,18 @@ article {
     padding: 5rem 10rem;
 }
 
-article + article {
-    border-top: 0.5rem dashed $background-middle;
+div#post-list-container {
+    margin-top: 2.5rem;
+}
+
+div#post-list-container article{
+    padding: 2.5rem 10rem;
+}
+
+article + article,
+div#tags-container,
+div#categories-container {
+    border-top: 0.5rem dotted $background-middle;
 }
 
 /*** Body - END */
@@ -49,15 +59,9 @@ header#site-header {
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 5rem 2.5rem 0 2.5rem;
+    padding: 5rem;
     text-align: left;
     background-color: $primary-color;
-    overflow-y: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-header#site-header::-webkit-scrollbar {
-    display: none;
 }
 
 /* Logo */
@@ -67,7 +71,9 @@ div#site-logo-container {
     overflow: hidden;
     flex-grow: 0;
     flex-shrink: 0;
-    margin: 0 2rem;
+    margin: 0;
+    position: fixed;
+    width: 30rem
 }
 a#site-logo {
     font-size: 15rem;
@@ -84,15 +90,28 @@ nav#site-nav {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 3.5rem 0;
-    max-width: 30rem;
+    margin: 2.5rem 0;
+    width: 30rem;
+    position: fixed;
+    top: 15rem;
+    bottom: 8rem;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
+// nav#site-nav::-webkit-scrollbar {
+//     display: none;
+// }
+
 div#site-nav-page {
-    padding: 0 1.5rem 0 2rem;
+    padding: 0 1.5rem 0 0rem;
+    border-right: 0.25rem solid $text-light;
+
 }
 div#site-nav-section {
-    padding: 0 2rem 0 1.5rem;
+    padding: 0 0rem 0 1.5rem;
+    margin-left: -0.20rem;
     border-left: 0.25rem solid $text-light;
 }
 
@@ -107,7 +126,7 @@ div#toc-pages ul {
 div#toc-sections ul {
     margin: 0;
     padding: 0;
-    display: flexbox;        
+    display: flexbox;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
@@ -115,8 +134,15 @@ div#toc-pages li {
     list-style: none;
     padding-bottom: 0.8em;
 }
+
+div#toc-pages li:last-of-type {
+    padding-bottom: 0;
+}
+
 div#toc-sections li {
     list-style: none;
+    padding-bottom: 0.4em;
+    line-height: 1em;
 }
 
 /* Navigation links */
@@ -125,7 +151,7 @@ div#toc-sections li {
     font-size: 2.2rem;
 }
 #toc-sections a.nav-link {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 a.nav-link {
     color: $text-light;
@@ -146,7 +172,7 @@ footer#site-footer {
     left: 0;
     bottom: 0;
     display: flexbox;
-    width: 30rem;
+    width: 35rem;
     background-color: $primary-color;
     padding: 2.5rem;
 }
@@ -183,5 +209,8 @@ img.footer-icon:first-of-type {
     article {
         color: $text-dark;
         padding: 5rem;
+    }
+    div#post-list-container article{
+        padding: 2.5rem 5rem;
     }
 }

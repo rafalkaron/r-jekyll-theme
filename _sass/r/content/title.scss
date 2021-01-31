@@ -62,3 +62,13 @@ h6 > img {
     height: 1.2em;
     margin-bottom: -0.25em;
 }
+
+img.post-image {
+        overflow: auto;
+        padding: 0;
+        margin: $margin 0;
+        max-width: 100%;
+        display: block;
+        border-radius: $border-radius;
+        height: unset;
+}

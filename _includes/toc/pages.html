@@ -1,14 +1,13 @@
 {%- assign default_paths = site.pages | where: "layout", "default" | sort: "order" | map: "path" -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-
 <ul class="{{ page.title | slugify }}">
     {%- for path in page_paths %}
-        {%- assign toc_page = site.pages | where: "path", path | first -%}
-        {%- assign link_title = toc_page.title -%}
-        {%- if toc_page.navtitle -%}
-            {% assign link_title = toc_page.navtitle %}
-        {% endif %}
+    {%- assign toc_page = site.pages | where: "path", path | first -%}
+    {%- assign link_title = toc_page.title -%}
+    {%- if toc_page.navtitle -%}
+    {% assign link_title = toc_page.navtitle %}
+    {% endif %}
     <li><a href="{{ toc_page.url | relative_url }}" class="nav-link {{ toc_page.title | slugify }}">{{ link_title | escape }}</a></li>
     {%- endfor %}
 </ul>
@@ -19,3 +18,17 @@
     }
 </style>
 
+{%- if page.layout == "post" -%}
+<style>
+    a.blog {
+        text-decoration: underline;
+    }
+
+    div#toc-sections a {
+        text-decoration: none;
+    }
+    div#toc-sections a:hover {
+        text-decoration: underline;
+    }
+</style>
+{% endif %}

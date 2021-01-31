@@ -16,7 +16,6 @@ html {
     @import "r/layout/print";
 }
 @import "r/layout/columns";
-
 // Styling
 @import "r/styling/animations",
 "r/styling/shadow",
@@ -36,5 +35,6 @@ main#page-content {
     "r/content/note",
     "r/content/abbr",
     "r/content/link",
-    "r/content/title";
+    "r/content/title",
+    "r/content/blog";    
 }
