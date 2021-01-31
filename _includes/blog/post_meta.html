@@ -27,7 +27,7 @@
         <span class="post-categories">
             {% assign categories = post.categories %}
             {% for category in categories %}
-            <a href="{{site.baseurl}}/blog/#{{category|slugize}}">{{category}}</a>
+            <a href="{{site.baseurl}}/blog.html/#{{category|slugize}}">{{category}}</a>
             {% unless forloop.last %}&nbsp;{% endunless %}
             {% endfor %}
         </span>
@@ -36,7 +36,7 @@
         <span class="post-categories">
             {% assign categories = page.categories %}
             {% for category in categories %}
-            <a href="{{site.baseurl}}/blog/#{{category|slugize}}">{{category}}</a>
+            <a href="{{site.baseurl}}/blog.html/#{{category|slugize}}">{{category}}</a>
             {% unless forloop.last %}&nbsp;{% endunless %}
             {% endfor %}
         </span>
@@ -49,7 +49,7 @@
         <span class="post-categories">
             {% assign categories = post.categories %}
             {% for category in categories %}
-            <li class="post-tag"><a href="{{site.baseurl}}/blog/#{{tag|slugize}}">{{tag}}</a></li>
+            <li class="post-tag"><a href="{{site.baseurl}}/blog.html/#{{tag|slugize}}">{{tag}}</a></li>
             {% unless forloop.last %}&nbsp;{% endunless %}
             {% endfor %}
         </span>
@@ -61,7 +61,7 @@
         <span class="post-categories">
             {% assign categories = page.categories %}
             {% for category in categories %}
-            <li class="post-tag"><a href="{{site.baseurl}}/blog/#{{tag|slugize}}">{{tag}}</a></li>
+            <li class="post-tag"><a href="{{site.baseurl}}/blog.html/#{{tag|slugize}}">{{tag}}</a></li>
             {% unless forloop.last %}&nbsp;{% endunless %}
             {% endfor %}
         </span>
