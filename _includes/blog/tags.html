@@ -7,7 +7,7 @@
         <h3 id="{{ tag_name | slugize }}" class="tag-head">{{ tag_name }}</h3>
         <ul class="post-tags">
             {% for post in site.tags[tag_name] %}
-            <li class="post-tag"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+            <li class="post-tag"><a href="{{ site.baseurl }}{{ post.url | relative_url }}">{{post.title}}</a></li>
             {% endfor %}
         </ul>
     </div>
