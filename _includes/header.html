@@ -1,7 +1,7 @@
 <header id="site-header" role="banner">
     <div id="site-logo-container">
         {%- if site.logo %}
-        <a href="/index.html" id="site-logo">{{ site.logo }}</a>
+        <a href="{{ site.baseurl }}/index.html" id="site-logo">{{ site.logo }}</a>
         {%- endif %}
     </div>
 
@@ -18,7 +18,7 @@
                 
                 {%- if page.layout == "post" -%}
                 <ul>
-                    <li><a style="font-weight: bold;" href="{{page.url}}#top" class="nav-link nav-link-top">{{ page.title }}</a></li>
+                    <li><a style="font-weight: bold;" href="{{ #top | relative_url }}" class="nav-link nav-link-top">{{ page.title }}</a></li>
                 </ul>
                     
                 {% include toc/sections.html html=content anchor_class="nav-link" h_min=2 h_max=2 sanitize=true skip_no_ids=true %}
