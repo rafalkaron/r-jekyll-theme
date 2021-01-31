@@ -1,0 +1,7 @@
+{% assign content_pages = site.pages | where: "layout", "singlepage" | sort: "order" %}
+{% for p in content_pages %}
+<section class="section" id="{{p.title | slugify}}">
+    {{- p.content | markdownify -}}
+</section>
+
+{% endfor %}

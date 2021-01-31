@@ -1,0 +1,10 @@
+{% assign content = content | strip | replace: '<h1', '</article><article class="level-1"><h1' | remove_first: "</article>" %}
+{% assign content = content | strip | replace: '<h2', '</section><section class="level-2"><h2' | remove_first: "</section>" %}
+{% assign content = content | strip | replace: '<h3', '</section><section class="level-3"><h3' %}
+{% assign content = content | strip | replace: '<h4', '</section><section class="level-4"><h4' %}
+{% assign content = content | strip | replace: '<h5', '</section><section class="level-5"><h5' %}
+{% assign content = content | strip | replace: '<h6', '</section><section class="level-6"><h6' %}
+
+{{ content }}
+
+</article>

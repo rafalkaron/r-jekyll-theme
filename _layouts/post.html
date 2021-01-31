@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{%- include head.html %}
+
+<body>
+	{%- include print/cover_front.html -%} 
+	{%- include header.html -%}
+
+	<main id="page-content" class="content {{ page.outputclass }}">
+
+		<article class="post">
+			<h1 class="post-title">			{%- if page.image -%} <img class="post-image" src="{{ page.image }}"> {% endif %}
+				{{ page.title | escape }} </h1>
+			
+
+
+			{% include blog/post_meta.html -%}
+			
+			{{ content }}
+			{% include blog/go_back_to_blog.html %}
+		</article>
+	</main>
+	{%- include footer.html -%} 
+	{%- include print/cover_back.html -%}
+</body>
+
+</html>

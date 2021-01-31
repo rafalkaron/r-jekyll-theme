@@ -1,0 +1,102 @@
+div#post-list-container {
+
+    ul#post-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    
+        li.post-item {
+            margin: 0;
+            padding: 0;
+            
+            a.post-link,
+            a.post-link:hover,
+            a.post-link:active {
+                text-decoration-color: $primary-color;
+            }
+
+    
+            div.post-excerpt {
+                p {
+                    margin-top: $margin;
+                }
+            }
+        }
+    
+
+    }
+}
+
+div.read-more,
+div.go-back {
+    text-align: right;
+    
+    a.read-more-link,
+    a.go-back-link {
+        font-size: 1.8rem;
+    }
+}
+div.post-info {
+    margin-top: $margin;
+
+    * {
+        font-weight: bold;
+    }
+
+    span.post-categories {
+        text-decoration: none;
+        font-weight: bold;
+        color: $text-dark;
+
+        * {
+            text-decoration: inherit;
+            font-weight: inherit;
+            color: inherit;
+        }
+    }
+
+    span.post-categories:hover,
+    span.post-categories:active {
+        color: $secondary-color;
+        text-decoration: underline;
+    }
+}
+
+ul.post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 0.25rem;
+    
+    li.post-tag {
+        font-size: 1.3rem;
+        list-style: none;
+        padding: 0.25em 0.75em;
+        margin: 0.8rem 0.8rem 0.8rem 0;
+        background-color: $background-middle;
+        color: $text-dark;
+        border-radius: $border-radius;
+        width: auto;
+        text-align: center;
+        vertical-align: middle;
+        display: inline;
+        text-decoration: none;
+        font-weight: bold;
+    
+        * {
+            border: none;
+            text-decoration: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            color: inherit;
+        }
+    }
+    li.post-tag:hover,
+    li.post-tag:active {
+        color: $secondary-color;
+    }
+}
+
+img.post-image {
+    margin-top: 0;
+}
