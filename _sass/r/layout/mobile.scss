@@ -123,7 +123,10 @@ div#toc-pages li {
 }
 div#toc-sections li {
     padding: 0 0.8rem;
+    padding-bottom: 0.4em;
+    text-align: right;
     list-style: none;
+    line-height: 1em;
 }
 
 #toc-pages a.nav-link {
@@ -235,6 +238,9 @@ img.footer-icon {
     #toc-sections a.nav-link {
         font-size: 1.4rem;
     }
+    div#toc-sections li {
+        text-align: center;
+    }
 }
 
 /* iPhone 10-ish */
@@ -254,7 +260,6 @@ img.footer-icon {
 
     div#post-list-container {
         margin: 0;    
-}
-
+    }
 }
 /*** Tall screens - END */
