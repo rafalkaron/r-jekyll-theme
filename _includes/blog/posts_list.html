@@ -9,10 +9,10 @@
     <ul id="post-list">
     
         <li class="post-item">
-            <a href="{{ post.url }}" class="post-link"> <h1 id="{{post.title | slugify }}"> {%- if post.image -%} <img class="post-image" src="{{ post.image }}"> {%- endif -%}{{post.title}}</h1> </a>
+            <a href="{{ post.url | relative_url }}" class="post-link"> <h1 id="{{post.title | slugify }}"> {%- if post.image -%} <img class="post-image" src="{{ post.image }}"> {%- endif -%}{{post.title}}</h1> </a>
             {% include blog/post_meta.html -%}
             <div class="read-more">
-                <a href="{{ post.url }}" class="read-more-link"> Read more...</a>
+                <a href="{{ post.url | relative_url }}" class="read-more-link"> Read more...</a>
             </div>
 
         </li>
