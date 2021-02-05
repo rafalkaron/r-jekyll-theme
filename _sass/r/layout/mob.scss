@@ -20,9 +20,9 @@ html {
 body {
     margin: 0;
     min-width: 375px;
-    display:flex; 
-    flex-direction:column; 
-    height:100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     min-height: -webkit-fill-available;
     background-color: $background-light;
 }
@@ -32,9 +32,9 @@ main#page-content {
 }
 article {
     color: $text-dark;
-    padding: 5rem 5rem; 
+    padding: 5rem 5rem;
 }
-div#post-list-container article{
+div#post-list-container article {
     padding: 2.5rem 5rem;
 }
 div#post-list-container {
@@ -42,7 +42,7 @@ div#post-list-container {
 }
 article + article,
 div#categories-container,
-div#tags-container  {
+div#tags-container {
     border-top: 0.5rem dotted $background-middle;
 }
 /*** Body - END */
@@ -109,7 +109,7 @@ div#toc-pages ul {
 div#toc-sections ul {
     margin: 0;
     padding: 0;
-    display: flex;        
+    display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
 }
@@ -127,7 +127,6 @@ div#toc-sections li {
 #toc-pages a.nav-link {
     font-weight: bold;
     font-size: 2.2rem;
-
 }
 #toc-sections a.nav-link {
     font-size: 1.4rem;
@@ -146,7 +145,7 @@ a.nav-link:focus {
 
 /*** Footer - START */
 footer#site-footer {
-    margin-top: auto; 
+    margin-top: auto;
     position: relative;
     bottom: 0;
     background-color: $primary-color;
@@ -221,7 +220,7 @@ img.footer-icon {
         justify-content: center;
     }
     div#toc-sections ul {
-        display: flex;        
+        display: flex;
         justify-content: center;
     }
     #toc-pages a.nav-link {
