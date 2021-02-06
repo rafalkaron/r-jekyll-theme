@@ -7,8 +7,8 @@ html {
 * {
     font-family: $main-font;
     line-height: 1.6em;
-    text-align: left;
     color: $text-dark;
+    text-align: left;
     font-size: 1.6rem;
 }
 .print {
@@ -20,9 +20,9 @@ html {
 body {
     margin: 0;
     min-width: 375px;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    display:flex; 
+    flex-direction:column; 
+    height:100vh;
     min-height: -webkit-fill-available;
     background-color: $background-light;
 }
@@ -32,7 +32,7 @@ main#page-content {
 }
 article {
     color: $text-dark;
-    padding: 5rem 5rem;
+    padding: 5rem 5rem; 
 }
 div#post-list-container article {
     padding: 2.5rem 5rem;
@@ -42,7 +42,7 @@ div#post-list-container {
 }
 article + article,
 div#categories-container,
-div#tags-container {
+div#tags-container  {
     border-top: 0.5rem dotted $background-middle;
 }
 /*** Body - END */
@@ -88,7 +88,6 @@ a#site-logo {
 /* Navigation */
 nav#site-nav {
     display: flexbox;
-    justify-content: flex-end;
     margin: 0;
 }
 div#site-nav-page {
@@ -109,7 +108,7 @@ div#toc-pages ul {
 div#toc-sections ul {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex;        
     justify-content: flex-end;
     flex-wrap: wrap;
 }
@@ -120,7 +119,6 @@ div#toc-pages li {
 div#toc-sections li {
     padding: 0 0.8rem;
     padding-bottom: 0.4em;
-    text-align: right;
     list-style: none;
     line-height: 1em;
 }
@@ -145,7 +143,7 @@ a.nav-link:focus {
 
 /*** Footer - START */
 footer#site-footer {
-    margin-top: auto;
+    margin-top: auto; 
     position: relative;
     bottom: 0;
     background-color: $primary-color;
@@ -197,6 +195,8 @@ img.footer-icon {
     header#site-header {
         display: flexbox;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
     div#site-logo-container {
         float: none;
@@ -218,20 +218,27 @@ img.footer-icon {
     div#toc-pages ul {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
     }
     div#toc-sections ul {
-        display: flex;
+        display: flex;        
         justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
     }
     #toc-pages a.nav-link {
         font-weight: bold;
         font-size: 2.2rem;
+        text-align: center;
+        display: flex;        
+        justify-content: center;
     }
     #toc-sections a.nav-link {
         font-size: 1.4rem;
-    }
-    div#toc-sections li {
         text-align: center;
+        display: flex;        
+        justify-content: center;
     }
 }
 /* iPhone 10-ish */

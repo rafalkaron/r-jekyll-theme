@@ -10,7 +10,7 @@ html {
     @import "r/layout/desktop";
 }
 @media only screen and (max-width: 950px) {
-    @import "r/layout/mob";
+    @import "r/layout/mobile";
 }
 @media only print {
     @import "r/layout/print";
