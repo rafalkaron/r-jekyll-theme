@@ -1,7 +1,7 @@
 <div class="post-meta">
     <div class="post-info">
         {% if post %}
-        <time class="post-published" datetime="{{ post.date | date_to_xmlschema }}{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: date_format }}</time>
+        <time class="post-published" datetime="{{ post.date | date_to_xmlschema }}{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
         {%endif%}
         {% if page %}
         <time class="post-published" datetime="{{ page.date | date_to_xmlschema }}{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>
@@ -9,7 +9,7 @@
 
         {%- if post.modified_date -%}<span> ~ </span>
         {%- assign mdate = post.modified_date | date_to_xmlschema -%}
-        <time class="post-modified" datetime="{{ mdate }}" itemprop="dateModified">{{ mdate | date: date_format }}</time>
+        <time class="post-modified" datetime="{{ mdate }}" itemprop="dateModified">{{ mdate | date: "%B %d, %Y" }}</time>
         {%- endif -%}
         {%- if page.modified_date -%}<span> ~ </span>
         {%- assign mdate = page.modified_date | date_to_xmlschema -%}
