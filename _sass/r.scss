@@ -6,8 +6,12 @@ html {
     -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
 }
 
-
-@import "r/layout/mobile";
+@media only screen and (min-width: 950px) {
+    @import "r/layout/desktop";
+}
+@media only screen and (max-width: 950px) {
+    @import "r/layout/mobile";
+}
 @media only print {
     @import "r/layout/print";
 }
