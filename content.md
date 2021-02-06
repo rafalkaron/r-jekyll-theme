@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: content
 order: "1"
 #navtitle:
