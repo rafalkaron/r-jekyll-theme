@@ -87,7 +87,6 @@ a#site-logo {
 
 /* Navigation */
 nav#site-nav {
-    display: flexbox;
     margin: 0;
 }
 div#site-nav-page {
@@ -115,12 +114,14 @@ div#toc-sections ul {
 div#toc-pages li {
     padding: 0 0.8rem;
     list-style: none;
+    text-align: right;
 }
 div#toc-sections li {
     padding: 0 0.8rem;
     padding-bottom: 0.4em;
     list-style: none;
     line-height: 1em;
+    text-align: right;
 }
 #toc-pages a.nav-link {
     font-weight: bold;
