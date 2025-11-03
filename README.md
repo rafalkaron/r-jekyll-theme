@@ -1,7 +1,9 @@
 # r-jekyll-theme
 
 A simple red Jekyll theme with left navigation that's perfect for portfolios and resumes.  
-See the [sample r-jekyll-theme implementation](https://rafalkaron.github.io/r-jekyll-theme).
+
+<img width="2654" height="1868" alt="r-jekyll-theme-headers" src="https://github.com/user-attachments/assets/c324cbf7-ab98-4a93-aa44-d7f9ee090d06" />
+<img width="2654" height="1868" alt="r-jekyll-theme-blog-post" src="https://github.com/user-attachments/assets/f45e2ce5-c7a4-461c-bf71-66648c6f5a1f" />
 
 ## Installation
 
